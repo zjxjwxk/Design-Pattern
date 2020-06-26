@@ -2,6 +2,7 @@ package com.zjut.designpattern.observer;
 
 import com.zjut.designpattern.DisplayElement;
 import com.zjut.designpattern.Observer;
+import com.zjut.designpattern.Subject;
 import com.zjut.designpattern.subject.WeatherData;
 
 /**
@@ -12,9 +13,9 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
     private float currentPressure = 29.92f;
     private float lastPressure;
-    private WeatherData weatherData;
+    private Subject weatherData;
 
-    public ForecastDisplay(WeatherData weatherData) {
+    public ForecastDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
