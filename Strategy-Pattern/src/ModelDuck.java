@@ -7,6 +7,9 @@ import behavior.impl.Quack;
  */
 public class ModelDuck extends Duck {
 
+    /**
+     * 构造函数设置默认飞行（不会飞）和呱呱叫方式
+     */
     public ModelDuck() {
         flyBehavior = new FlyNoWay();
         quackBehavior = new Quack();

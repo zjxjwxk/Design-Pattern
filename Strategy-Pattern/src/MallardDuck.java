@@ -7,6 +7,9 @@ import behavior.impl.Quack;
  */
 public class MallardDuck extends Duck {
 
+    /**
+     * 构造函数设置呱呱叫和飞行方式
+     */
     public MallardDuck() {
         quackBehavior = new Quack();
         flyBehavior = new FlyWithWings();
