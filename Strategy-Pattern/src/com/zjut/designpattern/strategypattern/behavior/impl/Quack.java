@@ -1,6 +1,6 @@
-package behavior.impl;
+package com.zjut.designpattern.strategypattern.behavior.impl;
 
-import behavior.QuackBehavior;
+import com.zjut.designpattern.strategypattern.behavior.QuackBehavior;
 
 /**
  * @author zjxjwxk

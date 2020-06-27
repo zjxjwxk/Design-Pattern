@@ -1,4 +1,6 @@
-import behavior.impl.FlyRocketPowered;
+package com.zjut.designpattern.strategypattern;
+
+import com.zjut.designpattern.strategypattern.behavior.impl.FlyRocketPowered;
 
 /**
  * @author zjxjwxk

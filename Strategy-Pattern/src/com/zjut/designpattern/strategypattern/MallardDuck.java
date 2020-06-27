@@ -1,5 +1,7 @@
-import behavior.impl.FlyWithWings;
-import behavior.impl.Quack;
+package com.zjut.designpattern.strategypattern;
+
+import com.zjut.designpattern.strategypattern.behavior.impl.FlyWithWings;
+import com.zjut.designpattern.strategypattern.behavior.impl.Quack;
 
 /**
  * @author zjxjwxk

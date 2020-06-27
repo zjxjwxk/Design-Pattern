@@ -1,6 +1,6 @@
-package behavior.impl;
+package com.zjut.designpattern.strategypattern.behavior.impl;
 
-import behavior.FlyBehavior;
+import com.zjut.designpattern.strategypattern.behavior.FlyBehavior;
 
 /**
  * @author zjxjwxk

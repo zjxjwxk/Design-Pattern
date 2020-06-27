@@ -1,8 +1,8 @@
-package com.zjut.designpattern.observer;
+package com.zjut.designpattern.observerpattern.observer;
 
-import com.zjut.designpattern.DisplayElement;
-import com.zjut.designpattern.Observer;
-import com.zjut.designpattern.Subject;
+import com.zjut.designpattern.observerpattern.DisplayElement;
+import com.zjut.designpattern.observerpattern.Observer;
+import com.zjut.designpattern.observerpattern.Subject;
 
 /**
  * @author zjxjwxk

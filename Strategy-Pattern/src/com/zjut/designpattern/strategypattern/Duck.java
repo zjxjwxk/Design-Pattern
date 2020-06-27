@@ -1,5 +1,7 @@
-import behavior.FlyBehavior;
-import behavior.QuackBehavior;
+package com.zjut.designpattern.strategypattern;
+
+import com.zjut.designpattern.strategypattern.behavior.FlyBehavior;
+import com.zjut.designpattern.strategypattern.behavior.QuackBehavior;
 
 /**
  * @author zjxjwxk

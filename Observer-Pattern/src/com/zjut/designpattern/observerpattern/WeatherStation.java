@@ -1,10 +1,10 @@
-package com.zjut.designpattern;
+package com.zjut.designpattern.observerpattern;
 
-import com.zjut.designpattern.observer.CurrentConditionDisplay;
-import com.zjut.designpattern.observer.ForecastDisplay;
-import com.zjut.designpattern.observer.HeatIndexDisplay;
-import com.zjut.designpattern.observer.StatisticsDisplay;
-import com.zjut.designpattern.subject.WeatherData;
+import com.zjut.designpattern.observerpattern.observer.CurrentConditionDisplay;
+import com.zjut.designpattern.observerpattern.observer.ForecastDisplay;
+import com.zjut.designpattern.observerpattern.observer.HeatIndexDisplay;
+import com.zjut.designpattern.observerpattern.observer.StatisticsDisplay;
+import com.zjut.designpattern.observerpattern.subject.WeatherData;
 
 /**
  * @author zjxjwxk

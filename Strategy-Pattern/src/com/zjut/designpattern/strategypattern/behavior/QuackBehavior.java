@@ -1,4 +1,4 @@
-package behavior;
+package com.zjut.designpattern.strategypattern.behavior;
 
 /**
  * @author zjxjwxk
