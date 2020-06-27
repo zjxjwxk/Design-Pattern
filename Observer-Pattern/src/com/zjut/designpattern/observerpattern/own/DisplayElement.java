@@ -1,4 +1,4 @@
-package com.zjut.designpattern.observerpattern;
+package com.zjut.designpattern.observerpattern.own;
 
 /**
  * @author zjxjwxk

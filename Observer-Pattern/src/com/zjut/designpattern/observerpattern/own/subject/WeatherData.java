@@ -1,7 +1,7 @@
-package com.zjut.designpattern.observerpattern.subject;
+package com.zjut.designpattern.observerpattern.own.subject;
 
-import com.zjut.designpattern.observerpattern.Observer;
-import com.zjut.designpattern.observerpattern.Subject;
+import com.zjut.designpattern.observerpattern.own.Observer;
+import com.zjut.designpattern.observerpattern.own.Subject;
 
 import java.util.ArrayList;
 import java.util.List;
