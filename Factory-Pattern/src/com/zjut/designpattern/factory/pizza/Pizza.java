@@ -1,7 +1,6 @@
 package com.zjut.designpattern.factory.pizza;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.zjut.designpattern.factory.ingredient.*;
 
 /**
  * @author zjxjwxk
@@ -10,19 +9,14 @@ import java.util.List;
 public abstract class Pizza {
 
     String name;
-    String dough;
-    String sauce;
-    List<String> toppings = new ArrayList<>();
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clams clam;
 
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings: ");
-        for (Object topping : toppings) {
-            System.out.println("  " + topping);
-        }
-    }
+    public abstract void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350");
@@ -38,5 +32,9 @@ public abstract class Pizza {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
