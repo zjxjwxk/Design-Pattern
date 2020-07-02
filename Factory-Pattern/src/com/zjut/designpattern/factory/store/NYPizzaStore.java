@@ -15,6 +15,7 @@ public class NYPizzaStore extends PizzaStore {
         PizzaIngredientFactory ingredientFactory = new NYPizzaIngredientFactory();
 
         if ("cheese".equals(type)) {
+            // 传入抽象工厂（原料工厂）
             pizza = new CheesePizza(ingredientFactory);
             pizza.setName("New York Style Cheese Pizza");
         } else if ("veggie".equals(type)) {

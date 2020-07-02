@@ -16,6 +16,9 @@ public abstract class Pizza {
     Pepperoni pepperoni;
     Clams clam;
 
+    /**
+     * 工厂方法（通过子类继承来准备具体的原料）
+     */
     public abstract void prepare();
 
     public void bake() {
