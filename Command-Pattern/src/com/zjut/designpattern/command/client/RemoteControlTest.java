@@ -18,12 +18,12 @@ public class RemoteControlTest {
         SimpleRemoteControl control = new SimpleRemoteControl();
 
         // Receiver
-        Light light = new Light();
+        Light light = new Light("");
         // Command
         LightOnCommand lightOnCommand = new LightOnCommand(light);
 
         // Receiver
-        GarageDoor garageDoor = new GarageDoor();
+        GarageDoor garageDoor = new GarageDoor("");
         // Command
         GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garageDoor);
 
