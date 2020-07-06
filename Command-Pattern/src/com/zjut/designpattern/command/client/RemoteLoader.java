@@ -8,12 +8,14 @@ import com.zjut.designpattern.command.receiver.Light;
 import com.zjut.designpattern.command.receiver.Stereo;
 
 /**
+ * Client
  * @author zjxjwxk
  * @date 2020-07-06 20:34
  */
 public class RemoteLoader {
 
     public static void main(String[] args) {
+        // Invoker
         RemoteControl remoteControl = new RemoteControl();
 
         // Receiver
@@ -29,7 +31,9 @@ public class RemoteLoader {
         LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
         LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
 
-        CeilingFanOnCommand ceilingFanOn = new CeilingFanOnCommand(ceilingFan);
+        CeilingFanHighCommand ceilingFanHighCommand = new CeilingFanHighCommand(ceilingFan);
+        CeilingFanMediumCommand ceilingFanMediumCommand = new CeilingFanMediumCommand(ceilingFan);
+        CeilingFanLowCommand ceilingFanLowCommand = new CeilingFanLowCommand(ceilingFan);
         CeilingFanOffCommand ceilingFanOff = new CeilingFanOffCommand(ceilingFan);
 
         GarageDoorUpCommand garageDoorUp = new GarageDoorUpCommand(garageDoor);
@@ -40,8 +44,9 @@ public class RemoteLoader {
 
         remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
         remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff);
-        remoteControl.setCommand(2, ceilingFanOn, ceilingFanOff);
-        remoteControl.setCommand(3, stereoOnWithCD, stereoOff);
+        remoteControl.setCommand(2, ceilingFanHighCommand, ceilingFanOff);
+        remoteControl.setCommand(3, ceilingFanMediumCommand, ceilingFanOff);
+        remoteControl.setCommand(4, stereoOnWithCD, stereoOff);
 
         System.out.println(remoteControl);
 
@@ -51,7 +56,15 @@ public class RemoteLoader {
         remoteControl.offButtonWasPushed(1);
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
+
+        System.out.println(remoteControl);
+        remoteControl.undoButtonWasPushed();
+
         remoteControl.onButtonWasPushed(3);
+
+        System.out.println(remoteControl);
+        remoteControl.undoButtonWasPushed();
+
         remoteControl.offButtonWasPushed(3);
     }
 }

@@ -7,4 +7,6 @@ package com.zjut.designpattern.command.command;
 public interface Command {
 
     public void execute();
+
+    public void undo();
 }

@@ -4,21 +4,21 @@ import com.zjut.designpattern.command.receiver.CeilingFan;
 
 /**
  * @author zjxjwxk
- * @date 2020-07-06 20:41
+ * @date 2020-07-06 21:59
  */
-public class CeilingFanOffCommand implements Command {
+public class CeilingFanHighCommand implements Command {
 
     CeilingFan ceilingFan;
     int prevSpeed;
 
-    public CeilingFanOffCommand(CeilingFan ceilingFan) {
+    public CeilingFanHighCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
     @Override
     public void execute() {
         prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.off();
+        ceilingFan.high();
     }
 
     @Override
