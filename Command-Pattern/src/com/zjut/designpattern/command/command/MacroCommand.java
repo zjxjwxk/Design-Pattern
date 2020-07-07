@@ -1,6 +1,7 @@
 package com.zjut.designpattern.command.command;
 
 /**
+ * 宏命令
  * @author zjxjwxk
  * @date 2020-07-07 13:49
  */

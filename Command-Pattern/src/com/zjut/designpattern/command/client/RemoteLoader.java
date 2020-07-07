@@ -45,6 +45,7 @@ public class RemoteLoader {
         Command[] partyOn = {livingRoomLightOn, kitchenLightOn, ceilingFanHighCommand, garageDoorUp, stereoOnWithCD};
         Command[] partyOff = {livingRoomLightOff, kitchenLightOff, ceilingFanOff, garageDoorDown, stereoOff};
 
+        // Macro Command
         MacroCommand partyOnMacro = new MacroCommand(partyOn);
         MacroCommand partyOffMacro = new MacroCommand(partyOff);
 
