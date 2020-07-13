@@ -1,6 +1,6 @@
-package com.zjut.designpattern.adapter.impl;
+package com.zjut.designpattern.adapter.duck.impl;
 
-import com.zjut.designpattern.adapter.Duck;
+import com.zjut.designpattern.adapter.duck.Duck;
 
 /**
  * @author zjxjwxk

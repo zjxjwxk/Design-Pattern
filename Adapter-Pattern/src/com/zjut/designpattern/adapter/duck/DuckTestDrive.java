@@ -1,8 +1,8 @@
-package com.zjut.designpattern.adapter;
+package com.zjut.designpattern.adapter.duck;
 
-import com.zjut.designpattern.adapter.adapter.TurkeyAdapter;
-import com.zjut.designpattern.adapter.impl.MallardDuck;
-import com.zjut.designpattern.adapter.impl.WildTurkey;
+import com.zjut.designpattern.adapter.duck.adapter.TurkeyAdapter;
+import com.zjut.designpattern.adapter.duck.impl.MallardDuck;
+import com.zjut.designpattern.adapter.duck.impl.WildTurkey;
 
 /**
  * @author zjxjwxk

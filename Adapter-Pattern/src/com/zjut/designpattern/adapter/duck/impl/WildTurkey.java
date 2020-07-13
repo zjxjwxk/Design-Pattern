@@ -1,6 +1,6 @@
-package com.zjut.designpattern.adapter.impl;
+package com.zjut.designpattern.adapter.duck.impl;
 
-import com.zjut.designpattern.adapter.Turkey;
+import com.zjut.designpattern.adapter.duck.Turkey;
 
 /**
  * @author zjxjwxk

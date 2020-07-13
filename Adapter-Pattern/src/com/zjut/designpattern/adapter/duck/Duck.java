@@ -1,4 +1,4 @@
-package com.zjut.designpattern.adapter;
+package com.zjut.designpattern.adapter.duck;
 
 /**
  * @author zjxjwxk

@@ -1,7 +1,7 @@
-package com.zjut.designpattern.adapter.adapter;
+package com.zjut.designpattern.adapter.duck.adapter;
 
-import com.zjut.designpattern.adapter.Duck;
-import com.zjut.designpattern.adapter.Turkey;
+import com.zjut.designpattern.adapter.duck.Duck;
+import com.zjut.designpattern.adapter.duck.Turkey;
 
 /**
  * 火鸡适配器
