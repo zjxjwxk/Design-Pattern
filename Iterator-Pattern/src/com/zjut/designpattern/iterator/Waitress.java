@@ -1,8 +1,6 @@
 package com.zjut.designpattern.iterator;
 
-import com.zjut.designpattern.iterator.menu.DinerMenu;
 import com.zjut.designpattern.iterator.menu.Menu;
-import com.zjut.designpattern.iterator.menu.PancakeHouseMenu;
 
 import java.util.Iterator;
 
