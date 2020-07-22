@@ -31,10 +31,6 @@ public class CafeMenu implements Menu {
         menuItems.put(menuItem.getName(), menuItem);
     }
 
-    public Map<String, MenuItem> getItems() {
-        return menuItems;
-    }
-
     @Override
     public Iterator<MenuItem> createIterator() {
         return menuItems.values().iterator();

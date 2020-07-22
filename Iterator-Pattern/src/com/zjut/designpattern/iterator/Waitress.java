@@ -3,32 +3,23 @@ package com.zjut.designpattern.iterator;
 import com.zjut.designpattern.iterator.menu.Menu;
 
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author zjxjwxk
  * @date 2020/7/22 1:50 下午
  */
 public class Waitress {
-    Menu pancakeHouseMenu;
-    Menu dinerMenu;
-    Menu cafeMenu;
+    List<Menu> menus;
 
-    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
-        this.pancakeHouseMenu = pancakeHouseMenu;
-        this.dinerMenu = dinerMenu;
-        this.cafeMenu = cafeMenu;
+    public Waitress(List<Menu> menus) {
+        this.menus = menus;
     }
 
     public void printMenu() {
-        Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
-        Iterator<MenuItem> dinerIterator = dinerMenu.createIterator();
-        Iterator<MenuItem> cafeIterator = cafeMenu.createIterator();
-        System.out.println("MENU\n----\nBREAKFAST");
-        printMenu(pancakeIterator);
-        System.out.println("\nLUNCH");
-        printMenu(dinerIterator);
-        System.out.println("\nDINNER");
-        printMenu(cafeIterator);
+        for (Menu menu : menus) {
+            printMenu(menu.createIterator());
+        }
     }
 
     public void printMenu(Iterator<MenuItem> iterator) {
