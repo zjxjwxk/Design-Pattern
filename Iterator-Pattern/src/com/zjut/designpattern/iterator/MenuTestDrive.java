@@ -15,9 +15,9 @@ import java.util.List;
 public class MenuTestDrive {
     public static void main(String[] args) {
         List<Menu> menus = new ArrayList<>();
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
-        CafeMenu cafeMenu = new CafeMenu();
+        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu("BREAKFAST");
+        DinerMenu dinerMenu = new DinerMenu("LUNCH");
+        CafeMenu cafeMenu = new CafeMenu("DINNER");
         menus.add(pancakeHouseMenu);
         menus.add(dinerMenu);
         menus.add(cafeMenu);

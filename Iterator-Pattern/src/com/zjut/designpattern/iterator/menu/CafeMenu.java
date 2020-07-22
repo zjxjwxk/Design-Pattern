@@ -12,8 +12,11 @@ import java.util.Map;
  */
 public class CafeMenu implements Menu {
     Map<String, MenuItem> menuItems = new Hashtable<>();
+    String name;
 
-    public CafeMenu() {
+    public CafeMenu(String name) {
+        this.name = name;
+
         addItem("Veggie Burger and Air Fries",
                 "Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
                 true, 3.99);
@@ -34,5 +37,10 @@ public class CafeMenu implements Menu {
     @Override
     public Iterator<MenuItem> createIterator() {
         return menuItems.values().iterator();
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

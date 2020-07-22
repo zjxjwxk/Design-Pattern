@@ -17,7 +17,9 @@ public class Waitress {
     }
 
     public void printMenu() {
+        System.out.print("MENU\n----");
         for (Menu menu : menus) {
+            System.out.println("\n" + menu.getName());
             printMenu(menu.createIterator());
         }
     }

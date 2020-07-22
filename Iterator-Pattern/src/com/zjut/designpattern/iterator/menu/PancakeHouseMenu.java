@@ -11,10 +11,11 @@ import java.util.List;
  * @date 2020/7/22 11:44 上午
  */
 public class PancakeHouseMenu implements Menu {
-
     List<MenuItem> menuItems;
+    String name;
 
-    public PancakeHouseMenu() {
+    public PancakeHouseMenu(String name) {
+        this.name = name;
         menuItems = new ArrayList<>();
 
         addItem("K&B's Pancake Breakfast",
@@ -47,5 +48,10 @@ public class PancakeHouseMenu implements Menu {
     @Override
     public Iterator<MenuItem> createIterator() {
         return menuItems.iterator();
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
