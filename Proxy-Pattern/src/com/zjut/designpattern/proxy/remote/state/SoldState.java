@@ -1,6 +1,6 @@
-package com.zjut.designpattern.proxy.state;
+package com.zjut.designpattern.proxy.remote.state;
 
-import com.zjut.designpattern.proxy.GumballMachine;
+import com.zjut.designpattern.proxy.remote.service.GumballMachine;
 
 /**
  * @author zjxjwxk
@@ -8,7 +8,7 @@ import com.zjut.designpattern.proxy.GumballMachine;
  */
 public class SoldState implements State {
 
-    GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
 
     public SoldState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

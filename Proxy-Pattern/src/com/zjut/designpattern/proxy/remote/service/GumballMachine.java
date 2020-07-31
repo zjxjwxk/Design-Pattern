@@ -1,12 +1,16 @@
-package com.zjut.designpattern.proxy;
+package com.zjut.designpattern.proxy.remote.service;
 
-import com.zjut.designpattern.proxy.state.*;
+import com.zjut.designpattern.proxy.remote.api.GumballMachineRemote;
+import com.zjut.designpattern.proxy.remote.state.*;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 /**
  * @author zjxjwxk
- * @date 2020/7/24 11:02 上午
+ * @date 2020/7/31 1:26 下午
  */
-public class GumballMachine {
+public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
 
     State soldOutState;
     State noQuarterState;
@@ -18,7 +22,7 @@ public class GumballMachine {
     String location;
     int count;
 
-    public GumballMachine(String location, int count) {
+    public GumballMachine(String location, int count) throws RemoteException {
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
@@ -77,7 +81,9 @@ public class GumballMachine {
         return winnerState;
     }
 
+    @Override
     public State getState() {
+        System.out.println("Method getState() is called");
         return state;
     }
 
@@ -85,7 +91,9 @@ public class GumballMachine {
         this.state = state;
     }
 
+    @Override
     public int getCount() {
+        System.out.println("Method getCount() is called");
         return count;
     }
 
@@ -93,7 +101,9 @@ public class GumballMachine {
         this.count = count;
     }
 
-    public String getLocation() {
+    @Override
+    public String getLocation() throws RemoteException {
+        System.out.println("Method getLocation() is called");
         return location;
     }
 

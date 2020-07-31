@@ -1,10 +1,12 @@
-package com.zjut.designpattern.proxy.state;
+package com.zjut.designpattern.proxy.remote.state;
+
+import java.io.Serializable;
 
 /**
  * @author zjxjwxk
  * @date 2020/7/24 12:39 下午
  */
-public interface State {
+public interface State extends Serializable {
 
     public void insertQuarter();
 

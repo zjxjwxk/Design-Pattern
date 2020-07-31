@@ -1,6 +1,6 @@
-package com.zjut.designpattern.proxy.state;
+package com.zjut.designpattern.proxy.remote.state;
 
-import com.zjut.designpattern.proxy.GumballMachine;
+import com.zjut.designpattern.proxy.remote.service.GumballMachine;
 
 import java.util.Random;
 
@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class HasQuarterState implements State {
 
-    GumballMachine gumballMachine;
+    transient GumballMachine gumballMachine;
     Random randomWinner = new Random(System.currentTimeMillis());
 
     public HasQuarterState(GumballMachine gumballMachine) {
